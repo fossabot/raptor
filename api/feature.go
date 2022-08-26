@@ -122,7 +122,6 @@ func MetadataFromManifest(in *manifests.Feature) (*Metadata, error) {
 		md.Builder = strings.ToLower(builderType.Kind)
 	}
 	if md.Builder == "" {
-		//Todo auto-detect builder
 		md.Builder = ExpressionBuilder
 	}
 

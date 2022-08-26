@@ -50,6 +50,10 @@ const (
 	WindowFnMax
 	WindowFnMin
 	WindowFnCount
+	WindowFnDistinct
+	WindowFnDistinctSum
+	WindowFnDistinctAvg
+	WindowFnDistinctCount
 )
 
 func (w WindowFn) String() string {
@@ -64,6 +68,8 @@ func (w WindowFn) String() string {
 		return "min"
 	case WindowFnCount:
 		return "count"
+	case WindowFnDistinctCount:
+		return "distinct_count"
 	default:
 		return "unknown"
 	}
@@ -99,6 +105,14 @@ func StringToWindowFn(s string) WindowFn {
 		return WindowFnMax
 	case "count":
 		return WindowFnCount
+	case "distinct", "unique":
+		return WindowFnDistinct
+	case "distinct_sum", "unique_sum":
+		return WindowFnDistinctSum
+	case "distinct_avg", "unique_avg":
+		return WindowFnDistinctAvg
+	case "distinct_count", "unique_count":
+		return WindowFnDistinctCount
 	default:
 		return WindowFnUnknown
 	}

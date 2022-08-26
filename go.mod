@@ -8,6 +8,7 @@ require (
 	github.com/aws/aws-sdk-go-v2/credentials v1.12.9
 	github.com/aws/aws-sdk-go-v2/service/s3 v1.27.1
 	github.com/cert-manager/cert-manager v1.8.2
+	github.com/clarkduvall/hyperloglog v0.0.0-20171127014514-a0107a5d8004
 	github.com/cloudevents/sdk-go/binding/format/protobuf/v2 v2.10.1
 	github.com/cloudevents/sdk-go/v2 v2.10.1
 	github.com/die-net/lrucache v0.0.0-20220628165024-20a71bc65bf1
@@ -30,6 +31,7 @@ require (
 	github.com/qri-io/starlib v0.5.0
 	github.com/snowflakedb/gosnowflake v1.6.11
 	github.com/sourcegraph/starlight v0.0.0-20200510065702-c68e5b848a14
+	github.com/spaolacci/murmur3 v1.1.0
 	github.com/spf13/pflag v1.0.5
 	github.com/spf13/viper v1.12.0
 	github.com/vladimirvivien/gexe v0.1.1
